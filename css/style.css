@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  overflow: hidden;
+}
+body .fondo {
+  position: absolute;
+  height: 10000px;
+  width: 100%;
+  background: linear-gradient(to top, #F0E449 0%, #CCF62C 33%, #D14848 66%, #F0E449 100%);
+  animation: bg 10s linear infinite;
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+}
+body .wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+body .wrap .superior {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+body .wrap .centro {
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+body .wrap .inferior {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+body .wrap .contTxt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+body .wrap .contTxt h1 {
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: 800;
+  border: 0.8vw solid rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  font-size: 6vh;
+  color: rgba(0, 0, 0, 0.7);
+}
+body .wrap h2 {
+  display: inline-block;
+  padding: 5px 3px;
+  font-weight: 300;
+  border-top: 1px solid #000;
+  margin: 0 auto;
+  font-size: 2.5vh;
+}
+@media only screen and (max-width: 650px) {
+  body .wrap h2 {
+    font-size: 2vh;
+  }
+}
+body .wrap .reloj {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #FD727C;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+body .wrap .reloj .cont-minutero {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-animation: minutero 4s linear infinite;
+  -ms-animation: minutero 4s linear infinite;
+  animation: minutero 4s linear infinite;
+}
+body .wrap .reloj .cont-minutero .minutero {
+  width: 10px;
+  height: 55px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 45px;
+  top: 0px;
+  background: #FF1616;
+}
+body .wrap .reloj .cont-horario {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-animation: minutero 12s linear infinite;
+  -ms-animation: minutero 12s linear infinite;
+  animation: minutero 12s linear infinite;
+}
+body .wrap .reloj .cont-horario .horario {
+  width: 10px;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 45px;
+  top: 15px;
+  background: #E80011;
+}
+@keyframes minutero {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes bg {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 10000px;
+  }
+}
