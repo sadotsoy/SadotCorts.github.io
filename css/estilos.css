@@ -52,7 +52,7 @@ table {
 /* Configuracion de la portada */
 .portada{
 	height: 400px;
-	background: url('../img/error.gif');
+	background: url('../img/ball.gif');
 	background-position: center;
 	display: flex;
 	position: relative;
@@ -73,7 +73,7 @@ table {
 /* XXX del nombre */
 .portada h1{
 	font-size: 3em;
-	color: #ffffff;
+	color: #e6e2e2;
 }
 
 
@@ -134,6 +134,10 @@ table {
 	font-size: 20;
 	margin: auto;
 }
+.contenedor .bio p{
+	position: relative;
+	top: 0px;
+}
 /* Titulo de habilidades */
 .contenedor .tit2{
 	margin-top: 5px;
@@ -148,7 +152,7 @@ table {
 	margin-top: 5px;
 	display: inline-block;
 	top: 0;
-	witdh:8%;
+	width:8%;
 	font-size: 20;
 	right: 40;
 	margin: auto;
@@ -161,7 +165,7 @@ table {
 	text-align: center;
 	background: white;
 	height: 100%;
-	padding: 100px 6px 8px 0px;
+	padding: 20px 6px 8px 0px;
 	border-radius: 5px;
 	border-radius: 5px;
 	border-radius: 5px;
@@ -176,7 +180,7 @@ table {
 	border: 5px solid #94E285;
 	text-align: center;
 	background: white;
-	padding: 5px 6px 8px 0px;
+	padding: 20px 6px 8px 0px;
 	border-radius: 5px;
 	border-radius: 5px;
 	border-radius: 5px;
